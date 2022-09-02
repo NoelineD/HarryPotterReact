@@ -1,0 +1,13 @@
+
+
+.CharactersContainer {
+    background-color: #0F3B57;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-top:100px;
+    margin-bottom:100px;
+   overflow:auto;
+   height:800px;
+
+}

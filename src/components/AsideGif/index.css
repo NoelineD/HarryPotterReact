@@ -1,0 +1,10 @@
+
+
+.AsideContainer{
+    display:flex;
+    border: 3px solid palevioletred;
+    justify-content:right;
+    height: 600px; 
+    width:20%;
+
+}

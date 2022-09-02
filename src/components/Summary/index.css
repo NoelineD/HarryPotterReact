@@ -1,0 +1,56 @@
+.SummaryContainer{
+    display:flex;
+    flex-direction: column;
+    padding:30px;
+    border: 5px solid rgb(112, 129, 216);
+    justify-content:right;
+    height: 300px; 
+    width:100%;  
+    font-size: 1.1rem;
+}
+
+a{
+    text-decoration: none;
+    color:#1E2726;
+    font-weight:bold;
+    font-style:italic;
+}
+
+a:hover {
+    color:#EEA519;
+    font-weight:bold;
+  }
+
+#GriffinStyle{
+    color: #B72025;
+}
+
+#GriffinStyle:hover{
+    color: #FCAF17;
+}
+
+#RavenStyle{
+    color:#18669F;
+}
+
+#RavenStyle:hover{
+    color:#788375;
+}
+
+#HufflStyle{
+    color:#B68C07;
+}
+
+#HufflStyle:hover{
+    color:#8B816D;
+}
+
+#SlythStyle{
+    color:#02734B;
+}
+
+#SlythStyle:hover{
+    color:#777576;
+}
+
+
