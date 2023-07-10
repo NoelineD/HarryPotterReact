@@ -1,34 +1,36 @@
-#HomeContainer{
+#HomeContainer {
     background-color: #0F3B57;
     height: 2500PX;
 }
 
 @media screen and (min-width:555px) {
 
-    span{
-        display:flex;
-        justify-content:center;
-        align-items:center;
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         /* position:absolute; */
-        gap:10px;
-        position:absolute;
+        gap: 10px;
+        position: absolute;
     }
-    #Type{
-        display:flex;
-        position:relative;
-        background-color:rgb(227, 217, 150);
-        height:25px;
-        font-size:14px;
-    }
-    input{
-        display:inline-flex;
-        width:30vh;
-        height:20px;
-        background-color:rgb(227, 217, 150);
+
+    #Type {
+        display: flex;
         position: relative;
-        font-size:14px;
-        border-radius:2px;
-    } 
+        background-color: rgb(227, 217, 150);
+        font-size: 17px;
+        padding: 1px;
+    }
+
+    input {
+        display: inline-flex;
+        width: 30vh;
+        height: 25px;
+        background-color: rgb(227, 217, 150);
+        position: relative;
+        font-size: 14px;
+        border-radius: 2px;
+    }
 
 
 }
@@ -37,29 +39,30 @@
 
 @media screen and (min-width:1024px) {
 
-span{
-    display:inline-flex;
-    justify-content:center;
-    align-items:center;
-    position:absolute;
-    gap:10px;
-    
-}
+    span {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        gap: 10px;
 
-.Type{
-    display:inline-flex;
-    position:relative;
-    background-color:rgb(227, 217, 150);
-    height:25px;
-    font-size:17px;
-}
-input{
-    display:inline-flex;
-    width:50vh;
-    height:20px;
-    background-color:rgb(227, 217, 150);
-    position: relative;
-    font-size:17px;
-    border-radius:2px;
-} 
+    }
+
+    .Type {
+        display: inline-flex;
+        position: relative;
+        background-color: rgb(227, 217, 150);
+        font-size: 20px;
+        padding: 2px;
+    }
+
+    input {
+        display: inline-flex;
+        width: 50vh;
+        height: 26px;
+        background-color: rgb(227, 217, 150);
+        position: relative;
+        font-size: 17px;
+        border-radius: 2px;
+    }
 }

@@ -1,12 +1,16 @@
 import "./index.css";
-import { useState } from "react";
+import React, { useState } from "react";
+import Headerhq from "../components/Headerhq/index";
+import CardsQuiz from "../components/CardsQuiz/index";
 
 const Quiz = () => {
   const [input, setInput] = useState("");
 
   return (
     <div className="quizContainer">
-      <h1>Welcome sur la page Quiz</h1>
+       <Headerhq/>
+      <h1>Découvrez nos différents quiz :</h1>
+        <CardsQuiz />
     </div>
   );
 };

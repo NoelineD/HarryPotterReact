@@ -1,4 +1,5 @@
 import "./index.css";
+import React, { useState } from "react";
 
 const Modale = (props) => {
   return (

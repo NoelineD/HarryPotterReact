@@ -1,37 +1,46 @@
 .StoryHPContainer {
-    display:flex;
-    flex-direction: column;
-    border: 5px solid orange;
-    height:3800px;
-    width:100%;
-    padding:30px;
-    overflow:hidden;
+    height: 3800px;
+    width: 100%;
+    /* overflow:hidden; */
 }
 
 .Pcontainer {
-display:flex; 
-flex-direction:column; 
-height:450px;
-margin:10px;
-border: 0px solid yellowgreen;
-text-align:justify;
-font-size: 1.2rem;
+    height: 440px;
+    margin: 20px;
+    text-align: justify;
+    font-size: 1.3rem;
 }
 
-.Fonts{
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.smallpContainer {
+    height: 270px;
+    margin: 20px;
+    /* background-color: aqua; */
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.mediumpContainer {
+    height: 350px;
+    margin: 20px;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+
+.Fonts {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
-.FontTitle{
-font-family:'Times New Roman', Times, serif;
+.FontTitle {
+    font-family: 'Times New Roman', Times, serif;
 
 }
 
-.ImgHarry{
-height:200px;
-width:350px;
-float:right;
-margin:10px;
-border-radius: 20px;;
+.ImgHarry {
+    height: 170px;
+    width: 260px;
+    float: right;
+    margin: 65px 20px 10px 10px;
+    border-radius: 20px;
 }

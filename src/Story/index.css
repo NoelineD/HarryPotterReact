@@ -5,16 +5,17 @@
 }
 
 .StoryContainer{
-    background-image: url("../assets/kisspng-paper-parchment-stationery-template-scroll-mystique-5ad0f99fa115d8.2024629015236448316598.png");
-    background-size: cover;
-    background-position: center;
-    height: 4500px;
+    /* background-image: url("../components/assets/kisspng-paper-parchment-stationery-template-scroll-mystique-5ad0f99fa115d8.2024629015236448316598.png");
+    background-size: cover;*/
+    background-position: center; 
+    height: 5100px;
     width:100%;
 } 
 
 .FlexRow {
  display:flex;
  flex-direction: row;
+background-color: #F8E9D1;
 } 
 
 .SSContainer{

@@ -1,4 +1,5 @@
-import Gif from './gifHP.gif'
+import Gif from './gifHP.gif';
+import React, { useState } from "react";
 import "./index.css";
 
 const AsideGif = () => {
