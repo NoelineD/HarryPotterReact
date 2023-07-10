@@ -5,6 +5,7 @@ import "./index.css";
 const CardsQuiz = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [activeQuestions, setActiveQuestions] = useState([]);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
 
   const cardsData = [
     {
@@ -16,11 +17,12 @@ const CardsQuiz = () => {
           question: "Question 1 pour Main Characters Quiz",
           options: ["Réponse 1", "Réponse 2", "Réponse 3", "Réponse 4"],
           correctAnswer: 0,
+          selected: null,
         },
-        // Ajoutez les autres questions pour Main Characters Quiz ici
+        // Add other questions for Main Characters Quiz here
       ],
     },
-    // Ajoutez les autres données de carte avec leurs questions respectives
+    // Add other card data with their respective questions
     {
       id: 2,
       title: "Gryffindor Quiz",
@@ -30,11 +32,11 @@ const CardsQuiz = () => {
           question: "Question 1 pour Gryffindor Quiz",
           options: ["Réponse 1", "Réponse 2", "Réponse 3", "Réponse 4"],
           correctAnswer: 0,
+          selected: null,
         },
-        // Ajoutez les autres questions pour Main Characters Quiz ici
       ],
     },
-    
+
     {
       id: 3,
       title: "Slytherin Quiz",
@@ -44,6 +46,7 @@ const CardsQuiz = () => {
           question: "Question 1 pour Slytherin Quiz",
           options: ["Réponse 1", "Réponse 2", "Réponse 3", "Réponse 4"],
           correctAnswer: 0,
+          selected: null,
         },
         // Ajoutez les autres questions pour Main Characters Quiz ici
       ],
@@ -58,6 +61,7 @@ const CardsQuiz = () => {
           question: "Question 1 pour Ravenclaw Quiz",
           options: ["Réponse 1", "Réponse 2", "Réponse 3", "Réponse 4"],
           correctAnswer: "Réponse 2",
+          selected: null,
         },
         // Ajoutez les autres questions pour Main Characters Quiz ici
       ],
@@ -65,6 +69,9 @@ const CardsQuiz = () => {
   ];
 
   const openModal = (questions) => {
+    questions.forEach((question) => {
+      question.selected = null;
+    });
     setActiveQuestions(questions);
     setModalOpen(true);
   };
@@ -74,6 +81,13 @@ const CardsQuiz = () => {
     setModalOpen(false);
   };
 
+const handleAnswerSelection = (questionIndex, answerIndex) => {
+  const updatedQuestions = [...activeQuestions];
+  updatedQuestions[questionIndex].selected = answerIndex;
+  setActiveQuestions(updatedQuestions);
+  setSelectedAnswer(answerIndex);
+};
+
   return (
     <div className="cardQuizContainer">
       {cardsData.map((card) => (
@@ -82,7 +96,13 @@ const CardsQuiz = () => {
           <img src={card.image} alt={card.title} />
         </div>
       ))}
-      <ModalQuiz isOpen={isModalOpen} onClose={closeModal} questions={activeQuestions} />
+      <ModalQuiz
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        questions={activeQuestions}
+        selectedAnswer={selectedAnswer}
+        handleAnswerSelection={handleAnswerSelection}
+      />
     </div>
   );
 };
