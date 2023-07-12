@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 
 const ModalQuiz = ({ isOpen, onClose, questions, selectedAnswer, handleAnswerSelection }) => {
   if (!isOpen) {
